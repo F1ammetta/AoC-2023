@@ -1,3 +1,4 @@
+mod five;
 mod four;
 mod one;
 mod three;
@@ -14,7 +15,7 @@ fn main() {
     let res_2 = one::p2();
 
     let elapsed = now.elapsed();
-    println!("Elapsed: {} ms", elapsed.as_millis());
+    println!("Elapsed: {} µs", elapsed.as_micros());
 
     println!("Result 1: {}", res_1);
     println!("Result 2: {}", res_2);
@@ -28,7 +29,7 @@ fn main() {
     let res_2 = two::p2();
 
     let elapsed = now.elapsed();
-    println!("Elapsed: {} ms", elapsed.as_millis());
+    println!("Elapsed: {} µs", elapsed.as_micros());
 
     println!("Result 1: {}", res_1);
     println!("Result 2: {}", res_2);
@@ -42,7 +43,7 @@ fn main() {
     let res_2 = three::p2();
 
     let elapsed = now.elapsed();
-    println!("Elapsed: {} ms", elapsed.as_millis());
+    println!("Elapsed: {} µs", elapsed.as_micros());
 
     println!("Result 1: {}", res_1);
     println!("Result 2: {}", res_2);
@@ -56,7 +57,21 @@ fn main() {
     let res_2 = four::p2();
 
     let elapsed = now.elapsed();
-    println!("Elapsed: {} ms", elapsed.as_millis());
+    println!("Elapsed: {} µs", elapsed.as_micros());
+
+    println!("Result 1: {}", res_1);
+    println!("Result 2: {}", res_2);
+
+    println!("==================");
+    println!("Day 5");
+    let now = std::time::Instant::now();
+
+    let res_1 = five::p1();
+
+    let res_2 = five::p2();
+
+    let elapsed = now.elapsed();
+    println!("Elapsed: {} µs", elapsed.as_micros());
 
     println!("Result 1: {}", res_1);
     println!("Result 2: {}", res_2);
